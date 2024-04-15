@@ -133,25 +133,40 @@ console.log(personObject.salary);
 // 4.write a class to calculate the uber price. 
 
 
-class Ubar {
+// class Ubar {
 
-  constructor(price) {
-    this.price_amount = price
-  }
+//   constructor(price) {
+//     this.price_amount = price
+//   }
 
-  set price_amount(value){
-    this._price_amount =  value;
-    this.TotalAmount = this.price_amount * 50
-  }
-  get price_amount() {
-    return this._price_amount
-  }
-getCRT() {
-  return this.price_amount * 50 
+//   set price_amount(value){
+//     this._price_amount =  value;
+//     this.TotalAmount = this.price_amount * 50
+//   }
+//   get price_amount() {
+//     return this._price_amount
+//   }
+// getCRT() {
+//   return this.price_amount * 50 
+// }
+
+// }
+
+// let ubar = new Ubar(200)
+// console.log(ubar, ubar.price_amount);
+// console.log(`my Amount: ${ubar.getCRT()}`);
+
+
+
+class uba {
+constructor(name,price=20,km) {
+  this.price=price
+  this.name=name
+  this.km=km
 }
-
+get() {
+  return this.price * km
 }
-
-let ubar = new Ubar(200)
-console.log(ubar, ubar.price_amount);
-console.log(`my Amount: ${ubar.getCRT()}`);
+}
+let obje = new uba(9)
+console.log(obje.price);
